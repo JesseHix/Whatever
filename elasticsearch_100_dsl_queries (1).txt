@@ -1,0 +1,5223 @@
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 1" } },
+        { "match": { "content": "Query Content 1" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-02" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 2" } },
+        { "match": { "content": "Query Content 2" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-03" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 3" } },
+        { "match": { "content": "Query Content 3" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-04" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 4" } },
+        { "match": { "content": "Query Content 4" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-05" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 5" } },
+        { "match": { "content": "Query Content 5" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-06" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 6" } },
+        { "match": { "content": "Query Content 6" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-07" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 7" } },
+        { "match": { "content": "Query Content 7" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-08" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 8" } },
+        { "match": { "content": "Query Content 8" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-09" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 9" } },
+        { "match": { "content": "Query Content 9" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-10" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 10" } },
+        { "match": { "content": "Query Content 10" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-11" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 11" } },
+        { "match": { "content": "Query Content 11" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-12" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 12" } },
+        { "match": { "content": "Query Content 12" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-13" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 13" } },
+        { "match": { "content": "Query Content 13" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-14" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 14" } },
+        { "match": { "content": "Query Content 14" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-15" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 15" } },
+        { "match": { "content": "Query Content 15" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-16" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 16" } },
+        { "match": { "content": "Query Content 16" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-17" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 17" } },
+        { "match": { "content": "Query Content 17" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-18" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 18" } },
+        { "match": { "content": "Query Content 18" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-19" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 19" } },
+        { "match": { "content": "Query Content 19" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-20" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 20" } },
+        { "match": { "content": "Query Content 20" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-21" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 21" } },
+        { "match": { "content": "Query Content 21" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-22" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 22" } },
+        { "match": { "content": "Query Content 22" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-23" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 23" } },
+        { "match": { "content": "Query Content 23" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-24" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 24" } },
+        { "match": { "content": "Query Content 24" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-25" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 25" } },
+        { "match": { "content": "Query Content 25" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-26" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 26" } },
+        { "match": { "content": "Query Content 26" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-27" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 27" } },
+        { "match": { "content": "Query Content 27" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-28" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 28" } },
+        { "match": { "content": "Query Content 28" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-29" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 29" } },
+        { "match": { "content": "Query Content 29" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-30" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 30" } },
+        { "match": { "content": "Query Content 30" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-01" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 31" } },
+        { "match": { "content": "Query Content 31" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-02" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 32" } },
+        { "match": { "content": "Query Content 32" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-03" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 33" } },
+        { "match": { "content": "Query Content 33" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-04" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 34" } },
+        { "match": { "content": "Query Content 34" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-05" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 35" } },
+        { "match": { "content": "Query Content 35" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-06" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 36" } },
+        { "match": { "content": "Query Content 36" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-07" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 37" } },
+        { "match": { "content": "Query Content 37" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-08" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 38" } },
+        { "match": { "content": "Query Content 38" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-09" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 39" } },
+        { "match": { "content": "Query Content 39" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-10" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 40" } },
+        { "match": { "content": "Query Content 40" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-11" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 41" } },
+        { "match": { "content": "Query Content 41" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-12" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 42" } },
+        { "match": { "content": "Query Content 42" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-13" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 43" } },
+        { "match": { "content": "Query Content 43" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-14" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 44" } },
+        { "match": { "content": "Query Content 44" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-15" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 45" } },
+        { "match": { "content": "Query Content 45" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-16" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 46" } },
+        { "match": { "content": "Query Content 46" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-17" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 47" } },
+        { "match": { "content": "Query Content 47" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-18" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 48" } },
+        { "match": { "content": "Query Content 48" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-19" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 49" } },
+        { "match": { "content": "Query Content 49" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-20" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 50" } },
+        { "match": { "content": "Query Content 50" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-21" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 51" } },
+        { "match": { "content": "Query Content 51" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-22" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 52" } },
+        { "match": { "content": "Query Content 52" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-23" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 53" } },
+        { "match": { "content": "Query Content 53" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-24" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 54" } },
+        { "match": { "content": "Query Content 54" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-25" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 55" } },
+        { "match": { "content": "Query Content 55" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-26" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 56" } },
+        { "match": { "content": "Query Content 56" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-27" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 57" } },
+        { "match": { "content": "Query Content 57" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-28" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 58" } },
+        { "match": { "content": "Query Content 58" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-29" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 59" } },
+        { "match": { "content": "Query Content 59" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-30" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 60" } },
+        { "match": { "content": "Query Content 60" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-01" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 61" } },
+        { "match": { "content": "Query Content 61" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-02" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 62" } },
+        { "match": { "content": "Query Content 62" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-03" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 63" } },
+        { "match": { "content": "Query Content 63" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-04" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 64" } },
+        { "match": { "content": "Query Content 64" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-05" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 65" } },
+        { "match": { "content": "Query Content 65" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-06" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 66" } },
+        { "match": { "content": "Query Content 66" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-07" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 67" } },
+        { "match": { "content": "Query Content 67" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-08" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 68" } },
+        { "match": { "content": "Query Content 68" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-09" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 69" } },
+        { "match": { "content": "Query Content 69" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-10" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 70" } },
+        { "match": { "content": "Query Content 70" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-11" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 71" } },
+        { "match": { "content": "Query Content 71" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-12" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 72" } },
+        { "match": { "content": "Query Content 72" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-13" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 73" } },
+        { "match": { "content": "Query Content 73" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-14" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 74" } },
+        { "match": { "content": "Query Content 74" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-15" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 75" } },
+        { "match": { "content": "Query Content 75" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-16" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 76" } },
+        { "match": { "content": "Query Content 76" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-17" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 77" } },
+        { "match": { "content": "Query Content 77" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-18" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 78" } },
+        { "match": { "content": "Query Content 78" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-19" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 79" } },
+        { "match": { "content": "Query Content 79" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-20" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 80" } },
+        { "match": { "content": "Query Content 80" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-21" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 81" } },
+        { "match": { "content": "Query Content 81" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-22" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 82" } },
+        { "match": { "content": "Query Content 82" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-23" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 83" } },
+        { "match": { "content": "Query Content 83" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-24" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 84" } },
+        { "match": { "content": "Query Content 84" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-25" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 85" } },
+        { "match": { "content": "Query Content 85" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-26" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 86" } },
+        { "match": { "content": "Query Content 86" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-27" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 87" } },
+        { "match": { "content": "Query Content 87" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-28" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 88" } },
+        { "match": { "content": "Query Content 88" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-29" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 89" } },
+        { "match": { "content": "Query Content 89" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-30" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 90" } },
+        { "match": { "content": "Query Content 90" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-01" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 91" } },
+        { "match": { "content": "Query Content 91" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-02" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 92" } },
+        { "match": { "content": "Query Content 92" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-03" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 93" } },
+        { "match": { "content": "Query Content 93" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-04" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 94" } },
+        { "match": { "content": "Query Content 94" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-05" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 95" } },
+        { "match": { "content": "Query Content 95" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-06" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 96" } },
+        { "match": { "content": "Query Content 96" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-07" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 97" } },
+        { "match": { "content": "Query Content 97" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-08" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 98" } },
+        { "match": { "content": "Query Content 98" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-09" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 99" } },
+        { "match": { "content": "Query Content 99" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-10" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title":   "Query Title 100" } },
+        { "match": { "content": "Query Content 100" } }
+      ],
+      "filter": [
+        { "term":  { "status": "published" } },
+        { "range": { "publish_date": { "gte": "2015-01-11" } } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-103d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-109d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-115d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-121d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-127d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-133d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-139d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-145d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-151d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-157d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-163d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-169d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-175d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-181d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-187d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-193d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "status": "failed" } },
+        { "term": { "event.type": "login" } }
+      ],
+      "filter": {
+        "range": {
+          "@timestamp": {
+            "gte": "now-1h/h"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "exists": {
+      "field": "user.agent"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "wildcard": {
+      "filename": "*log*"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match": {
+      "message": "error"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "now-199d/d",
+        "lte": "now"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "user": "admin" } },
+        { "match": { "user": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        { "match": { "status": "success" } }
+      ]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "status_count": {
+      "terms": {
+        "field": "status"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "geo_bounding_box": {
+      "location": {
+        "top_left": {
+          "lat": 40.73,
+          "lon": -74.1
+        },
+        "bottom_right": {
+          "lat": 40.01,
+          "lon": -71.12
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "match_phrase": {
+      "message": "user login failed"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "prefix": {
+      "username": "admin"
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "terms": {
+      "status": ["error", "fail", "warning"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "fuzzy": {
+      "filename": {
+        "value": "logfile",
+        "fuzziness": "AUTO"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['bytes'].value > 1000",
+        "lang": "painless"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-4"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "307"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-3"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "316"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-2"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "325"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-1"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "334"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-0"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "343"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-4"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "352"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-3"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "361"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-2"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "370"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-1"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "379"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-0"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "388"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "user.name": "admin" } }
+      ],
+      "should": [
+        { "term": { "user.role": "superuser" } },
+        { "term": { "user.role": "root" } }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "geo_distance": {
+      "distance": "100km",
+      "location": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "term": {
+      "host.name.keyword": "web-server-4"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "message": {}
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "script_score": {
+      "query": {
+        "match_all": {}
+      },
+      "script": {
+        "source": "Math.log(doc['bytes'].value + 1)"
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "nested": {
+      "path": "comments",
+      "query": {
+        "bool": {
+          "must": [
+            { "match": { "comments.message": "error" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "ids": {
+      "values": ["1", "2", "3", "397"]
+    }
+  }
+}
+
+GET /_search
+{
+  "query": {
+    "multi_match": {
+      "query": "authentication failed",
+      "fields": ["message", "error", "description"]
+    }
+  }
+}
+
+GET /_search
+{
+  "aggs": {
+    "daily_logs": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "interval": "day"
+      }
+    }
+  },
+  "size": 0
+}
+
+GET /_search
+{
+  "query": {
+    "range": {
+      "event.duration": {
+        "gte": 1000000,
+        "lte": 10000000
+      }
+    }
+  }
+}
