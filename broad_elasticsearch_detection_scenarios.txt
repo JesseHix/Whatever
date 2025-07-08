@@ -1,0 +1,500 @@
+Email attachments with .exe files
+Clipboard access by unauthorized applications
+Firewall disable events
+Kubernetes container starts
+DNS volume anomalies
+Malware detections (Trojans)
+Logon attempts outside business hours
+Suspicious use of tools like curl and wget
+Unusual outbound connections
+Large data transfers to external domains
+Execution of encoded PowerShell commands
+Failed login attempts followed by a successful one
+Access to credential stores
+Creation of new local admin accounts
+Disabling of antivirus software
+Remote desktop connections from unusual IPs
+High volume of DNS TXT record queries
+Execution from temporary directories
+Unexpected parent-child process relationships
+Access to SMB shares from non-whitelisted hosts
+Connections to known malicious IPs
+Multiple failed MFA attempts
+Suspicious file downloads from external URLs
+Webshell activity detection
+Suspicious process injection behavior
+Rare parent process for cmd.exe
+Windows event log clearing
+Suspicious persistence mechanisms (e.g. autoruns)
+Rare user-agent strings in HTTP requests
+Unusual login location for user account
+Detection of Mimikatz tool signatures
+Tampering with security event logs
+Frequent registry changes in short time
+Beaconing behavior to C2 infrastructure
+Executable written to startup folders
+Encrypted traffic to unexpected destinations
+Usage of netstat, ipconfig, whoami by non-admin users
+Privilege escalation attempts
+Execution of unsigned binaries
+Access to sensitive documents by terminated accounts
+Lateral movement via WMI or PSRemoting
+Modifications to scheduled tasks
+Brute-force attacks on database login
+Access to internal repositories from unknown IPs
+Suspicious URL patterns in web traffic
+Abnormal spikes in CPU or memory usage
+Cloud service misconfiguration detection
+Unusual resource provisioning in cloud environments
+Over-permissive IAM policy changes
+Abnormal S3 object access patterns
+Multiple file extensions in attachments (e.g. .pdf.exe)
+DNS volume anomalies on sensitive resource
+Rare user-agent strings in HTTP requests with alert severity high
+Kubernetes container starts correlated with login anomalies
+Unusual outbound connections observed in production
+Rare parent process for cmd.exe triggered by internal user
+Malware detections (Trojans) triggered by internal user
+DNS volume anomalies during off-peak hours
+Connections to known malicious IPs involving new executable file
+Disabling of antivirus software during off-peak hours
+Kubernetes container starts following user privilege change
+Encrypted traffic to unexpected destinations on sensitive resource
+Windows event log clearing triggered by internal user
+Unexpected parent-child process relationships with external destination
+Malware detections (Trojans) involving new executable file
+Windows event log clearing involving new executable file
+Kubernetes container starts triggered by internal user
+Over-permissive IAM policy changes with alert severity high
+Webshell activity detection during off-peak hours
+Logon attempts outside business hours with external destination
+Privilege escalation attempts triggered by internal user
+Multiple failed MFA attempts observed in production
+Suspicious persistence mechanisms (e.g. autoruns) involving new executable file
+Abnormal S3 object access patterns with external destination
+Rare user-agent strings in HTTP requests triggered by internal user
+Firewall disable events involving new executable file
+Large data transfers to external domains following user privilege change
+Access to sensitive documents by terminated accounts with alert severity high
+DNS volume anomalies observed in production
+Webshell activity detection on sensitive resource
+Email attachments with .exe files involving new executable file
+Suspicious file downloads from external URLs triggered by internal user
+Suspicious persistence mechanisms (e.g. autoruns) following user privilege change
+Tampering with security event logs on sensitive resource
+Malware detections (Trojans) following user privilege change
+Rare user-agent strings in HTTP requests on sensitive resource
+Frequent registry changes in short time triggered by internal user
+Usage of netstat, ipconfig, whoami by non-admin users observed in production
+Clipboard access by unauthorized applications correlated with login anomalies
+Cloud service misconfiguration detection correlated with login anomalies
+Unusual resource provisioning in cloud environments correlated with login anomalies
+Connections to known malicious IPs with alert severity high
+Over-permissive IAM policy changes with external destination
+Failed login attempts followed by a successful one correlated with login anomalies
+Unusual resource provisioning in cloud environments repeated across multiple hosts
+Frequent registry changes in short time following user privilege change
+Frequent registry changes in short time with alert severity high
+Kubernetes container starts repeated across multiple hosts
+Creation of new local admin accounts observed in production
+Frequent registry changes in short time with external destination
+Email attachments with .exe files during off-peak hours
+Beaconing behavior to C2 infrastructure with alert severity high
+Clipboard access by unauthorized applications with alert severity high
+Frequent registry changes in short time during off-peak hours
+Connections to known malicious IPs observed in production
+Webshell activity detection correlated with login anomalies
+Execution of encoded PowerShell commands with external destination
+Tampering with security event logs triggered by internal user
+Tampering with security event logs during off-peak hours
+Abnormal S3 object access patterns repeated across multiple hosts
+Unexpected parent-child process relationships following user privilege change
+Suspicious file downloads from external URLs with alert severity high
+Unusual resource provisioning in cloud environments with external destination
+Lateral movement via WMI or PSRemoting with alert severity high
+Firewall disable events on sensitive resource
+Unexpected parent-child process relationships on sensitive resource
+Suspicious file downloads from external URLs repeated across multiple hosts
+Frequent registry changes in short time involving new executable file
+Access to SMB shares from non-whitelisted hosts with alert severity high
+Rare parent process for cmd.exe repeated across multiple hosts
+Privilege escalation attempts with alert severity high
+Access to sensitive documents by terminated accounts with external destination
+Email attachments with .exe files repeated across multiple hosts
+Access to credential stores following user privilege change
+Email attachments with .exe files following user privilege change
+Suspicious use of tools like curl and wget repeated across multiple hosts
+Privilege escalation attempts following user privilege change
+Unusual login location for user account following user privilege change
+Suspicious use of tools like curl and wget during off-peak hours
+Suspicious process injection behavior observed in production
+Suspicious URL patterns in web traffic with external destination
+Access to credential stores repeated across multiple hosts
+Abnormal spikes in CPU or memory usage correlated with login anomalies
+Suspicious process injection behavior following user privilege change
+Beaconing behavior to C2 infrastructure during off-peak hours
+Usage of netstat, ipconfig, whoami by non-admin users with alert severity high
+Usage of netstat, ipconfig, whoami by non-admin users on sensitive resource
+Email attachments with .exe files with alert severity high
+Cloud service misconfiguration detection triggered by internal user
+Unusual resource provisioning in cloud environments following user privilege change
+Clipboard access by unauthorized applications involving new executable file
+Unusual outbound connections following user privilege change
+DNS volume anomalies following user privilege change
+Failed login attempts followed by a successful one repeated across multiple hosts
+Connections to known malicious IPs following user privilege change
+Unusual outbound connections with alert severity high
+High volume of DNS TXT record queries observed in production
+Rare user-agent strings in HTTP requests with external destination
+High volume of DNS TXT record queries with external destination
+Rare user-agent strings in HTTP requests following user privilege change
+Access to sensitive documents by terminated accounts during off-peak hours
+Logon attempts outside business hours with alert severity high
+Suspicious persistence mechanisms (e.g. autoruns) with alert severity high
+Suspicious process injection behavior on sensitive resource
+Detection of Mimikatz tool signatures on sensitive resource
+Creation of new local admin accounts correlated with login anomalies
+Privilege escalation attempts observed in production
+Beaconing behavior to C2 infrastructure on sensitive resource
+Access to credential stores triggered by internal user
+Abnormal S3 object access patterns on sensitive resource
+Detection of Mimikatz tool signatures with alert severity high
+Remote desktop connections from unusual IPs on sensitive resource
+Creation of new local admin accounts on sensitive resource
+Email attachments with .exe files on sensitive resource
+Brute-force attacks on database login during off-peak hours
+Lateral movement via WMI or PSRemoting repeated across multiple hosts
+Suspicious URL patterns in web traffic following user privilege change
+Privilege escalation attempts repeated across multiple hosts
+Access to internal repositories from unknown IPs repeated across multiple hosts
+Suspicious process injection behavior with external destination
+Tampering with security event logs following user privilege change
+Unusual login location for user account observed in production
+Execution from temporary directories with alert severity high
+Tampering with security event logs correlated with login anomalies
+DNS volume anomalies with alert severity high
+Modifications to scheduled tasks on sensitive resource
+Disabling of antivirus software with alert severity high
+Large data transfers to external domains involving new executable file
+Remote desktop connections from unusual IPs with external destination
+Execution from temporary directories with external destination
+Brute-force attacks on database login observed in production
+Lateral movement via WMI or PSRemoting with external destination
+Suspicious persistence mechanisms (e.g. autoruns) with external destination
+Executable written to startup folders with alert severity high
+Malware detections (Trojans) on sensitive resource
+Over-permissive IAM policy changes observed in production
+Email attachments with .exe files triggered by internal user
+Abnormal spikes in CPU or memory usage following user privilege change
+Modifications to scheduled tasks with external destination
+Over-permissive IAM policy changes triggered by internal user
+Large data transfers to external domains repeated across multiple hosts
+Detection of Mimikatz tool signatures triggered by internal user
+Remote desktop connections from unusual IPs with alert severity high
+Unusual outbound connections triggered by internal user
+Multiple failed MFA attempts with external destination
+Detection of Mimikatz tool signatures following user privilege change
+Detection of Mimikatz tool signatures involving new executable file
+DNS volume anomalies with external destination
+Over-permissive IAM policy changes on sensitive resource
+Executable written to startup folders repeated across multiple hosts
+Execution of unsigned binaries on sensitive resource
+Remote desktop connections from unusual IPs correlated with login anomalies
+Encrypted traffic to unexpected destinations involving new executable file
+Brute-force attacks on database login with external destination
+Firewall disable events with alert severity high
+Unusual outbound connections during off-peak hours
+Logon attempts outside business hours correlated with login anomalies
+Lateral movement via WMI or PSRemoting on sensitive resource
+Detection of Mimikatz tool signatures observed in production
+Unusual outbound connections correlated with login anomalies
+Suspicious persistence mechanisms (e.g. autoruns) triggered by internal user
+Windows event log clearing observed in production
+Unexpected parent-child process relationships during off-peak hours
+Access to internal repositories from unknown IPs observed in production
+Over-permissive IAM policy changes following user privilege change
+Abnormal spikes in CPU or memory usage observed in production
+Firewall disable events triggered by internal user
+High volume of DNS TXT record queries during off-peak hours
+Multiple failed MFA attempts triggered by internal user
+Abnormal S3 object access patterns following user privilege change
+Webshell activity detection observed in production
+Usage of netstat, ipconfig, whoami by non-admin users correlated with login anomalies
+Suspicious use of tools like curl and wget following user privilege change
+DNS volume anomalies correlated with login anomalies
+Multiple failed MFA attempts repeated across multiple hosts
+Execution of encoded PowerShell commands on sensitive resource
+Malware detections (Trojans) with alert severity high
+Creation of new local admin accounts repeated across multiple hosts
+Rare user-agent strings in HTTP requests involving new executable file
+Multiple failed MFA attempts following user privilege change
+Execution of unsigned binaries during off-peak hours
+Unusual login location for user account with external destination
+Access to internal repositories from unknown IPs with external destination
+Cloud service misconfiguration detection on sensitive resource
+Connections to known malicious IPs repeated across multiple hosts
+Large data transfers to external domains with external destination
+Execution of unsigned binaries repeated across multiple hosts
+Lateral movement via WMI or PSRemoting correlated with login anomalies
+Webshell activity detection triggered by internal user
+Execution from temporary directories observed in production
+Modifications to scheduled tasks repeated across multiple hosts
+Access to SMB shares from non-whitelisted hosts observed in production
+Unexpected parent-child process relationships repeated across multiple hosts
+Access to SMB shares from non-whitelisted hosts correlated with login anomalies
+Execution of encoded PowerShell commands following user privilege change
+Disabling of antivirus software repeated across multiple hosts
+Unusual login location for user account triggered by internal user
+Clipboard access by unauthorized applications during off-peak hours
+Abnormal spikes in CPU or memory usage with alert severity high
+Executable written to startup folders with external destination
+Malware detections (Trojans) repeated across multiple hosts
+Webshell activity detection with external destination
+Large data transfers to external domains triggered by internal user
+Lateral movement via WMI or PSRemoting observed in production
+Privilege escalation attempts on sensitive resource
+Rare parent process for cmd.exe involving new executable file
+Cloud service misconfiguration detection following user privilege change
+Suspicious process injection behavior during off-peak hours
+Lateral movement via WMI or PSRemoting triggered by internal user
+Disabling of antivirus software with external destination
+DNS volume anomalies triggered by internal user
+Access to SMB shares from non-whitelisted hosts involving new executable file
+Suspicious URL patterns in web traffic with alert severity high
+Abnormal spikes in CPU or memory usage on sensitive resource
+Suspicious URL patterns in web traffic repeated across multiple hosts
+Remote desktop connections from unusual IPs during off-peak hours
+Logon attempts outside business hours observed in production
+Access to internal repositories from unknown IPs following user privilege change
+Suspicious persistence mechanisms (e.g. autoruns) observed in production
+Failed login attempts followed by a successful one with alert severity high
+Kubernetes container starts during off-peak hours
+Suspicious use of tools like curl and wget on sensitive resource
+Suspicious process injection behavior with alert severity high
+Executable written to startup folders correlated with login anomalies
+Suspicious use of tools like curl and wget observed in production
+High volume of DNS TXT record queries with alert severity high
+Cloud service misconfiguration detection involving new executable file
+Abnormal S3 object access patterns triggered by internal user
+Suspicious use of tools like curl and wget involving new executable file
+Kubernetes container starts on sensitive resource
+Unexpected parent-child process relationships observed in production
+Privilege escalation attempts involving new executable file
+Remote desktop connections from unusual IPs involving new executable file
+Access to sensitive documents by terminated accounts on sensitive resource
+Rare user-agent strings in HTTP requests correlated with login anomalies
+Remote desktop connections from unusual IPs observed in production
+Rare parent process for cmd.exe on sensitive resource
+Remote desktop connections from unusual IPs repeated across multiple hosts
+Multiple failed MFA attempts involving new executable file
+Brute-force attacks on database login on sensitive resource
+Execution from temporary directories following user privilege change
+Encrypted traffic to unexpected destinations with alert severity high
+Encrypted traffic to unexpected destinations during off-peak hours
+Rare parent process for cmd.exe correlated with login anomalies
+Windows event log clearing on sensitive resource
+Suspicious URL patterns in web traffic triggered by internal user
+Executable written to startup folders involving new executable file
+Tampering with security event logs involving new executable file
+Creation of new local admin accounts with alert severity high
+Execution from temporary directories involving new executable file
+Multiple failed MFA attempts during off-peak hours
+Failed login attempts followed by a successful one with external destination
+Abnormal spikes in CPU or memory usage involving new executable file
+Clipboard access by unauthorized applications observed in production
+Access to sensitive documents by terminated accounts repeated across multiple hosts
+Suspicious URL patterns in web traffic correlated with login anomalies
+Suspicious persistence mechanisms (e.g. autoruns) on sensitive resource
+Access to internal repositories from unknown IPs correlated with login anomalies
+Usage of netstat, ipconfig, whoami by non-admin users during off-peak hours
+Beaconing behavior to C2 infrastructure involving new executable file
+High volume of DNS TXT record queries involving new executable file
+Access to SMB shares from non-whitelisted hosts triggered by internal user
+Execution from temporary directories on sensitive resource
+Brute-force attacks on database login with alert severity high
+Windows event log clearing with alert severity high
+Failed login attempts followed by a successful one following user privilege change
+Rare parent process for cmd.exe with alert severity high
+Over-permissive IAM policy changes during off-peak hours
+Suspicious file downloads from external URLs correlated with login anomalies
+Logon attempts outside business hours triggered by internal user
+Lateral movement via WMI or PSRemoting involving new executable file
+Executable written to startup folders following user privilege change
+Abnormal S3 object access patterns with alert severity high
+Email attachments with .exe files with external destination
+Malware detections (Trojans) observed in production
+Abnormal spikes in CPU or memory usage repeated across multiple hosts
+Suspicious use of tools like curl and wget correlated with login anomalies
+Rare parent process for cmd.exe following user privilege change
+Frequent registry changes in short time on sensitive resource
+Large data transfers to external domains correlated with login anomalies
+Unusual resource provisioning in cloud environments involving new executable file
+High volume of DNS TXT record queries triggered by internal user
+Access to SMB shares from non-whitelisted hosts on sensitive resource
+Unusual login location for user account correlated with login anomalies
+Suspicious file downloads from external URLs during off-peak hours
+Rare parent process for cmd.exe observed in production
+High volume of DNS TXT record queries following user privilege change
+Logon attempts outside business hours repeated across multiple hosts
+Executable written to startup folders triggered by internal user
+Abnormal S3 object access patterns observed in production
+Encrypted traffic to unexpected destinations observed in production
+Failed login attempts followed by a successful one observed in production
+Beaconing behavior to C2 infrastructure with external destination
+Executable written to startup folders on sensitive resource
+Access to internal repositories from unknown IPs on sensitive resource
+Unusual outbound connections involving new executable file
+Encrypted traffic to unexpected destinations triggered by internal user
+Cloud service misconfiguration detection observed in production
+Unusual login location for user account repeated across multiple hosts
+Suspicious use of tools like curl and wget with external destination
+Execution of encoded PowerShell commands with alert severity high
+Abnormal spikes in CPU or memory usage triggered by internal user
+Access to credential stores during off-peak hours
+Logon attempts outside business hours during off-peak hours
+Suspicious file downloads from external URLs involving new executable file
+Unusual login location for user account during off-peak hours
+Execution of encoded PowerShell commands triggered by internal user
+Encrypted traffic to unexpected destinations with external destination
+High volume of DNS TXT record queries repeated across multiple hosts
+Unexpected parent-child process relationships triggered by internal user
+Malware detections (Trojans) correlated with login anomalies
+Execution of unsigned binaries observed in production
+Large data transfers to external domains with alert severity high
+Cloud service misconfiguration detection during off-peak hours
+Access to SMB shares from non-whitelisted hosts following user privilege change
+Access to credential stores observed in production
+Brute-force attacks on database login following user privilege change
+Firewall disable events during off-peak hours
+Suspicious file downloads from external URLs following user privilege change
+Usage of netstat, ipconfig, whoami by non-admin users involving new executable file
+Brute-force attacks on database login repeated across multiple hosts
+Email attachments with .exe files observed in production
+Tampering with security event logs repeated across multiple hosts
+Over-permissive IAM policy changes involving new executable file
+Lateral movement via WMI or PSRemoting following user privilege change
+Rare user-agent strings in HTTP requests during off-peak hours
+Creation of new local admin accounts following user privilege change
+Malware detections (Trojans) with external destination
+Beaconing behavior to C2 infrastructure repeated across multiple hosts
+Privilege escalation attempts with external destination
+Failed login attempts followed by a successful one on sensitive resource
+Suspicious process injection behavior involving new executable file
+Rare parent process for cmd.exe with external destination
+Beaconing behavior to C2 infrastructure correlated with login anomalies
+Execution of encoded PowerShell commands observed in production
+Over-permissive IAM policy changes repeated across multiple hosts
+Access to sensitive documents by terminated accounts following user privilege change
+Tampering with security event logs with alert severity high
+Modifications to scheduled tasks observed in production
+Unusual outbound connections with external destination
+Malware detections (Trojans) during off-peak hours
+Windows event log clearing following user privilege change
+Failed login attempts followed by a successful one involving new executable file
+Remote desktop connections from unusual IPs triggered by internal user
+Unusual resource provisioning in cloud environments with alert severity high
+Access to sensitive documents by terminated accounts involving new executable file
+Execution from temporary directories triggered by internal user
+Execution of encoded PowerShell commands involving new executable file
+Webshell activity detection involving new executable file
+Access to credential stores correlated with login anomalies
+Suspicious process injection behavior correlated with login anomalies
+Firewall disable events repeated across multiple hosts
+Firewall disable events following user privilege change
+Unexpected parent-child process relationships correlated with login anomalies
+Clipboard access by unauthorized applications with external destination
+Execution of encoded PowerShell commands correlated with login anomalies
+Modifications to scheduled tasks correlated with login anomalies
+Suspicious process injection behavior repeated across multiple hosts
+Rare user-agent strings in HTTP requests repeated across multiple hosts
+Suspicious persistence mechanisms (e.g. autoruns) repeated across multiple hosts
+Disabling of antivirus software observed in production
+Abnormal S3 object access patterns involving new executable file
+Disabling of antivirus software following user privilege change
+Brute-force attacks on database login correlated with login anomalies
+Clipboard access by unauthorized applications repeated across multiple hosts
+Suspicious use of tools like curl and wget triggered by internal user
+Execution of unsigned binaries following user privilege change
+Access to SMB shares from non-whitelisted hosts repeated across multiple hosts
+Encrypted traffic to unexpected destinations correlated with login anomalies
+Usage of netstat, ipconfig, whoami by non-admin users following user privilege change
+Large data transfers to external domains on sensitive resource
+Access to SMB shares from non-whitelisted hosts during off-peak hours
+Creation of new local admin accounts with external destination
+Access to credential stores involving new executable file
+Email attachments with .exe files correlated with login anomalies
+Execution from temporary directories repeated across multiple hosts
+Access to credential stores on sensitive resource
+Encrypted traffic to unexpected destinations repeated across multiple hosts
+Unusual outbound connections repeated across multiple hosts
+Execution from temporary directories correlated with login anomalies
+Detection of Mimikatz tool signatures correlated with login anomalies
+Creation of new local admin accounts during off-peak hours
+Rare parent process for cmd.exe during off-peak hours
+Cloud service misconfiguration detection repeated across multiple hosts
+Access to SMB shares from non-whitelisted hosts with external destination
+Firewall disable events with external destination
+Unusual resource provisioning in cloud environments observed in production
+Connections to known malicious IPs with external destination
+Suspicious process injection behavior triggered by internal user
+Access to internal repositories from unknown IPs with alert severity high
+Suspicious file downloads from external URLs with external destination
+Abnormal S3 object access patterns correlated with login anomalies
+Execution of encoded PowerShell commands repeated across multiple hosts
+Access to internal repositories from unknown IPs triggered by internal user
+Suspicious persistence mechanisms (e.g. autoruns) correlated with login anomalies
+Execution of unsigned binaries correlated with login anomalies
+Unusual login location for user account involving new executable file
+Abnormal spikes in CPU or memory usage during off-peak hours
+Connections to known malicious IPs during off-peak hours
+Connections to known malicious IPs triggered by internal user
+Multiple failed MFA attempts on sensitive resource
+Brute-force attacks on database login triggered by internal user
+Kubernetes container starts observed in production
+Windows event log clearing during off-peak hours
+Lateral movement via WMI or PSRemoting during off-peak hours
+Unusual resource provisioning in cloud environments during off-peak hours
+Suspicious persistence mechanisms (e.g. autoruns) during off-peak hours
+Webshell activity detection with alert severity high
+Unusual login location for user account on sensitive resource
+Disabling of antivirus software on sensitive resource
+Abnormal S3 object access patterns during off-peak hours
+Access to internal repositories from unknown IPs during off-peak hours
+Brute-force attacks on database login involving new executable file
+Access to credential stores with external destination
+High volume of DNS TXT record queries correlated with login anomalies
+Encrypted traffic to unexpected destinations following user privilege change
+Firewall disable events observed in production
+Over-permissive IAM policy changes correlated with login anomalies
+Large data transfers to external domains observed in production
+Firewall disable events correlated with login anomalies
+DNS volume anomalies repeated across multiple hosts
+Access to internal repositories from unknown IPs involving new executable file
+Rare user-agent strings in HTTP requests observed in production
+Execution of unsigned binaries involving new executable file
+Suspicious use of tools like curl and wget with alert severity high
+Disabling of antivirus software involving new executable file
+Suspicious file downloads from external URLs observed in production
+Access to sensitive documents by terminated accounts correlated with login anomalies
+Logon attempts outside business hours involving new executable file
+Execution of unsigned binaries with alert severity high
+Cloud service misconfiguration detection with external destination
+Kubernetes container starts with alert severity high
+Creation of new local admin accounts involving new executable file
+Tampering with security event logs with external destination
+Kubernetes container starts involving new executable file
+DNS volume anomalies involving new executable file
+Disabling of antivirus software correlated with login anomalies
+Suspicious URL patterns in web traffic involving new executable file
+Privilege escalation attempts correlated with login anomalies
+Clipboard access by unauthorized applications on sensitive resource
+Unexpected parent-child process relationships with alert severity high
+High volume of DNS TXT record queries on sensitive resource
+Execution of unsigned binaries with external destination
+Execution of encoded PowerShell commands during off-peak hours
+Usage of netstat, ipconfig, whoami by non-admin users triggered by internal user
+Beaconing behavior to C2 infrastructure triggered by internal user
+Access to credential stores with alert severity high
+Failed login attempts followed by a successful one during off-peak hours
+Connections to known malicious IPs correlated with login anomalies
+Usage of netstat, ipconfig, whoami by non-admin users with external destination
