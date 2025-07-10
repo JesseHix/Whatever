@@ -1,0 +1,4001 @@
+question,answer
+How do I find all logs with HTTP status code 500 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all access_denied events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find all logout events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all login events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logout events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logout events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find all access_denied events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all login events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all access_denied events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all access_denied events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'system-events' logs?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all login events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all login events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all access_denied events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logout events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all logout events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'system-events' logs?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all access_denied events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all login events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all access_denied events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'system-events' logs?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all access_denied events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all access_denied events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all access_denied events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I find all access_denied events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logout events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all login events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all login events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'system-events' logs?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logout events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I find all login events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'system-events' logs?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I find all file_upload events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all login events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all file_upload events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'system-events' logs?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'system-events' logs?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logout events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find all file_upload events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logout events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I find all logout events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all login events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all file_upload events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all access_denied events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all file_upload events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all file_upload events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all file_upload events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all login events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all login events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logout events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all login events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'system-events' logs?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all login events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all access_denied events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I find all access_denied events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all file_upload events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I find all access_denied events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all file_upload events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all login events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all access_denied events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all login events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all login events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all logout events from 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'webserver-logs' index?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logout events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all access_denied events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find all login events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all file_upload events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all logout events from 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all logout events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all login events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all access_denied events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all logs related to the 'sshd' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""sshd""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all login events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all login events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find all logs from IP address '192.168.1.100' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""192.168.1.100""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all logout events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""logout""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'app-logs' logs?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I find all logs related to the 'cron' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""cron""
+    }
+  }
+}"
+How do I find all file_upload events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I find all access_denied events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'system-events' logs?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I see all actions performed by user 'jsmith' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""jsmith""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'app-logs' index?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find all logs related to the 'nginx' process in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""nginx""
+    }
+  }
+}"
+How do I find logs containing the message 'Connection reset' in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Connection reset""
+    }
+  }
+}"
+How do I find all login events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""login""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I search logs that accessed the '/index.html' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/index.html""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I search logs that accessed the '/admin' endpoint in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/admin""
+    }
+  }
+}"
+How do I find logs containing the message 'User logged in' in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all access_denied events from 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I search logs that accessed the '/dashboard' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/dashboard""
+    }
+  }
+}"
+How do I find all logs from IP address '10.0.0.2' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""10.0.0.2""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'logs' index?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I see all actions performed by user 'guest' in the 'auth-logs' logs?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""guest""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'logs' logs?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'system-events' index?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I see all actions performed by user 'admin' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""admin""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I find logs containing the message 'Error reading file' in 'auth-logs'?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Error reading file""
+    }
+  }
+}"
+How do I find all access_denied events from 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""access_denied""
+    }
+  }
+}"
+How do I find all logs related to the 'python' process in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""process"": ""python""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 404 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""404""
+    }
+  }
+}"
+How do I find all file_upload events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 500 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""500""
+    }
+  }
+}"
+How do I see all actions performed by user 'alice' in the 'webserver-logs' logs?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""match"": {
+      ""user"": ""alice""
+    }
+  }
+}"
+How do I find logs containing the message 'Permission denied' in 'app-logs'?,"GET /app-logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Permission denied""
+    }
+  }
+}"
+How do I find all file_upload events from 'system-events'?,"GET /system-events/_search
+{
+  ""query"": {
+    ""match"": {
+      ""event"": ""file_upload""
+    }
+  }
+}"
+How do I find all logs from IP address '172.16.0.1' in the 'auth-logs' index?,"GET /auth-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""ip"": ""172.16.0.1""
+    }
+  }
+}"
+How do I search logs that accessed the '/login' endpoint in 'logs'?,"GET /logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""path"": ""/login""
+    }
+  }
+}"
+How do I find all logs with HTTP status code 200 in 'webserver-logs'?,"GET /webserver-logs/_search
+{
+  ""query"": {
+    ""term"": {
+      ""status_code"": ""200""
+    }
+  }
+}"
