@@ -1,0 +1,1923 @@
+question,answer
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""status_code"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 462 from the 'metrics' index?,GET /metrics/_doc/462
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""username"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 200 in the 'logs' index?,"PUT /logs/_doc/200
+{
+  ""user_id"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 352 in the 'security' index?,"PUT /security/_doc/352
+{
+  ""status_code"": ""User logged in"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""timestamp"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""username"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""event_type"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""event_type"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 232 in the 'app' index?,"PUT /app/_doc/232
+{
+  ""message"": ""User logged in"",
+  ""updated"": true
+}"
+How do I search for documents in 'audit' where 'username' contains 'Unauthorized access'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""Unauthorized access""
+    }
+  }
+}"
+How do I retrieve document ID 206 from the 'app' index?,GET /app/_doc/206
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""event_type"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 435 in the 'security' index?,"PUT /security/_doc/435
+{
+  ""message"": ""Login failed"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 30 in the 'metrics' index?,"PUT /metrics/_doc/30
+{
+  ""status_code"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 165 from the 'logs' index?,DELETE /logs/_doc/165
+How do I delete the entire 'users' index?,DELETE /users
+How do I search for documents in 'events' where 'username' contains 'System rebooted'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""System rebooted""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""user_id"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 82 from the 'logs' index?,DELETE /logs/_doc/82
+How do I update or create a document with ID 446 in the 'users' index?,"PUT /users/_doc/446
+{
+  ""user_id"": ""Login failed"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""status_code"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""event_type"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""status_code"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""event_type"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I search for documents in 'audit' where 'username' contains 'User logged in'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""User logged in""
+    }
+  }
+}"
+How do I delete the entire 'metrics' index?,DELETE /metrics
+How do I delete a specific document with ID 462 from the 'users' index?,DELETE /users/_doc/462
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""timestamp"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 273 in the 'security' index?,"PUT /security/_doc/273
+{
+  ""timestamp"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 423 from the 'security' index?,DELETE /security/_doc/423
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I update or create a document with ID 285 in the 'logs' index?,"PUT /logs/_doc/285
+{
+  ""user_id"": ""User logged in"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 64 in the 'app' index?,"PUT /app/_doc/64
+{
+  ""message"": ""Login failed"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 455 from the 'logs' index?,DELETE /logs/_doc/455
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""user_id"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'events' index?,DELETE /events
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I delete the entire 'logs' index?,DELETE /logs
+How do I retrieve document ID 246 from the 'audit' index?,GET /audit/_doc/246
+How do I delete a specific document with ID 336 from the 'audit' index?,DELETE /audit/_doc/336
+How do I delete the entire 'security' index?,DELETE /security
+How do I update or create a document with ID 209 in the 'audit' index?,"PUT /audit/_doc/209
+{
+  ""user_id"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""event_type"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 56 from the 'app' index?,DELETE /app/_doc/56
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""timestamp"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""user_id"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I search for documents in 'metrics' where 'event_type' contains 'Login failed'?,"GET /metrics/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""Login failed""
+    }
+  }
+}"
+How do I update or create a document with ID 127 in the 'app' index?,"PUT /app/_doc/127
+{
+  ""ip_address"": ""User logged in"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 436 in the 'security' index?,"PUT /security/_doc/436
+{
+  ""message"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""user_id"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""ip_address"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'logs' index?,DELETE /logs
+How do I search for documents in 'events' where 'ip_address' contains 'Login failed'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""ip_address"": ""Login failed""
+    }
+  }
+}"
+How do I search for documents in 'app' where 'message' contains 'User logged in'?,"GET /app/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I update or create a document with ID 434 in the 'audit' index?,"PUT /audit/_doc/434
+{
+  ""message"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I retrieve document ID 467 from the 'logs' index?,GET /logs/_doc/467
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""timestamp"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 128 in the 'app' index?,"PUT /app/_doc/128
+{
+  ""username"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""user_id"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 207 from the 'app' index?,GET /app/_doc/207
+How do I update or create a document with ID 304 in the 'metrics' index?,"PUT /metrics/_doc/304
+{
+  ""event_type"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""status_code"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""timestamp"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""event_type"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 293 from the 'app' index?,GET /app/_doc/293
+How do I delete a specific document with ID 103 from the 'logs' index?,DELETE /logs/_doc/103
+How do I search for documents in 'security' where 'ip_address' contains 'System rebooted'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""ip_address"": ""System rebooted""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""user_id"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 3 from the 'audit' index?,DELETE /audit/_doc/3
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""timestamp"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 140 in the 'app' index?,"PUT /app/_doc/140
+{
+  ""status_code"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I retrieve document ID 25 from the 'audit' index?,GET /audit/_doc/25
+How do I update or create a document with ID 99 in the 'logs' index?,"PUT /logs/_doc/99
+{
+  ""message"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""ip_address"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I update or create a document with ID 224 in the 'metrics' index?,"PUT /metrics/_doc/224
+{
+  ""event_type"": ""Login failed"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 435 in the 'events' index?,"PUT /events/_doc/435
+{
+  ""event_type"": ""User logged in"",
+  ""updated"": true
+}"
+How do I delete the entire 'logs' index?,DELETE /logs
+How do I update or create a document with ID 91 in the 'app' index?,"PUT /app/_doc/91
+{
+  ""user_id"": ""User logged in"",
+  ""updated"": true
+}"
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I update or create a document with ID 69 in the 'app' index?,"PUT /app/_doc/69
+{
+  ""user_id"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I retrieve document ID 435 from the 'app' index?,GET /app/_doc/435
+How do I update or create a document with ID 194 in the 'events' index?,"PUT /events/_doc/194
+{
+  ""status_code"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""event_type"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 394 in the 'events' index?,"PUT /events/_doc/394
+{
+  ""ip_address"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 53 from the 'audit' index?,DELETE /audit/_doc/53
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""event_type"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 437 from the 'security' index?,DELETE /security/_doc/437
+How do I retrieve document ID 282 from the 'app' index?,GET /app/_doc/282
+How do I delete a specific document with ID 478 from the 'audit' index?,DELETE /audit/_doc/478
+How do I search for documents in 'audit' where 'status_code' contains 'Login failed'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""status_code"": ""Login failed""
+    }
+  }
+}"
+How do I delete a specific document with ID 247 from the 'security' index?,DELETE /security/_doc/247
+How do I search for documents in 'events' where 'status_code' contains 'User logged in'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""status_code"": ""User logged in""
+    }
+  }
+}"
+How do I update or create a document with ID 441 in the 'users' index?,"PUT /users/_doc/441
+{
+  ""user_id"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""username"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I search for documents in 'security' where 'username' contains 'Unauthorized access'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""Unauthorized access""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""message"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 480 in the 'logs' index?,"PUT /logs/_doc/480
+{
+  ""status_code"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I retrieve document ID 477 from the 'logs' index?,GET /logs/_doc/477
+How do I retrieve document ID 125 from the 'users' index?,GET /users/_doc/125
+How do I search for documents in 'security' where 'ip_address' contains 'Login failed'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""ip_address"": ""Login failed""
+    }
+  }
+}"
+How do I search for documents in 'events' where 'user_id' contains 'System rebooted'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""user_id"": ""System rebooted""
+    }
+  }
+}"
+How do I retrieve document ID 31 from the 'logs' index?,GET /logs/_doc/31
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""event_type"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I search for documents in 'metrics' where 'username' contains 'System rebooted'?,"GET /metrics/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""System rebooted""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""username"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 253 in the 'events' index?,"PUT /events/_doc/253
+{
+  ""timestamp"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I retrieve document ID 302 from the 'logs' index?,GET /logs/_doc/302
+How do I search for documents in 'logs' where 'message' contains 'User logged in'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I delete the entire 'logs' index?,DELETE /logs
+How do I update or create a document with ID 461 in the 'security' index?,"PUT /security/_doc/461
+{
+  ""message"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 200 from the 'audit' index?,DELETE /audit/_doc/200
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""user_id"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 236 in the 'users' index?,"PUT /users/_doc/236
+{
+  ""status_code"": ""Login failed"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 453 in the 'metrics' index?,"PUT /metrics/_doc/453
+{
+  ""event_type"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I retrieve document ID 478 from the 'events' index?,GET /events/_doc/478
+How do I update or create a document with ID 455 in the 'app' index?,"PUT /app/_doc/455
+{
+  ""ip_address"": ""User logged in"",
+  ""updated"": true
+}"
+How do I delete the entire 'events' index?,DELETE /events
+How do I update or create a document with ID 240 in the 'app' index?,"PUT /app/_doc/240
+{
+  ""username"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I search for documents in 'security' where 'event_type' contains 'System rebooted'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""System rebooted""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""user_id"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 235 from the 'logs' index?,DELETE /logs/_doc/235
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""event_type"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I search for documents in 'metrics' where 'user_id' contains 'File uploaded'?,"GET /metrics/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""user_id"": ""File uploaded""
+    }
+  }
+}"
+How do I search for documents in 'security' where 'event_type' contains 'Unauthorized access'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""Unauthorized access""
+    }
+  }
+}"
+How do I delete a specific document with ID 467 from the 'users' index?,DELETE /users/_doc/467
+How do I retrieve document ID 431 from the 'metrics' index?,GET /metrics/_doc/431
+How do I delete a specific document with ID 410 from the 'logs' index?,DELETE /logs/_doc/410
+How do I search for documents in 'logs' where 'message' contains 'File uploaded'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""File uploaded""
+    }
+  }
+}"
+How do I update or create a document with ID 421 in the 'audit' index?,"PUT /audit/_doc/421
+{
+  ""timestamp"": ""Login failed"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 351 from the 'app' index?,DELETE /app/_doc/351
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""timestamp"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 362 in the 'audit' index?,"PUT /audit/_doc/362
+{
+  ""status_code"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I retrieve document ID 419 from the 'logs' index?,GET /logs/_doc/419
+How do I update or create a document with ID 201 in the 'events' index?,"PUT /events/_doc/201
+{
+  ""timestamp"": ""Login failed"",
+  ""updated"": true
+}"
+How do I search for documents in 'app' where 'username' contains 'System rebooted'?,"GET /app/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""System rebooted""
+    }
+  }
+}"
+How do I update or create a document with ID 251 in the 'metrics' index?,"PUT /metrics/_doc/251
+{
+  ""timestamp"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I delete the entire 'events' index?,DELETE /events
+How do I delete the entire 'users' index?,DELETE /users
+How do I delete a specific document with ID 84 from the 'users' index?,DELETE /users/_doc/84
+How do I search for documents in 'users' where 'status_code' contains 'Login failed'?,"GET /users/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""status_code"": ""Login failed""
+    }
+  }
+}"
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I delete the entire 'users' index?,DELETE /users
+How do I delete a specific document with ID 319 from the 'metrics' index?,DELETE /metrics/_doc/319
+How do I update or create a document with ID 448 in the 'app' index?,"PUT /app/_doc/448
+{
+  ""user_id"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 62 in the 'app' index?,"PUT /app/_doc/62
+{
+  ""user_id"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 247 in the 'app' index?,"PUT /app/_doc/247
+{
+  ""status_code"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""event_type"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 6 in the 'app' index?,"PUT /app/_doc/6
+{
+  ""user_id"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 213 from the 'events' index?,DELETE /events/_doc/213
+How do I update or create a document with ID 13 in the 'audit' index?,"PUT /audit/_doc/13
+{
+  ""username"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 113 in the 'users' index?,"PUT /users/_doc/113
+{
+  ""timestamp"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 28 in the 'users' index?,"PUT /users/_doc/28
+{
+  ""timestamp"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I delete the entire 'security' index?,DELETE /security
+How do I update or create a document with ID 54 in the 'audit' index?,"PUT /audit/_doc/54
+{
+  ""user_id"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 5 in the 'audit' index?,"PUT /audit/_doc/5
+{
+  ""event_type"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""status_code"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I search for documents in 'security' where 'timestamp' contains 'Unauthorized access'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""timestamp"": ""Unauthorized access""
+    }
+  }
+}"
+How do I search for documents in 'security' where 'user_id' contains 'File uploaded'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""user_id"": ""File uploaded""
+    }
+  }
+}"
+How do I delete the entire 'events' index?,DELETE /events
+How do I search for documents in 'events' where 'ip_address' contains 'File uploaded'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""ip_address"": ""File uploaded""
+    }
+  }
+}"
+How do I update or create a document with ID 452 in the 'audit' index?,"PUT /audit/_doc/452
+{
+  ""ip_address"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 361 in the 'users' index?,"PUT /users/_doc/361
+{
+  ""timestamp"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 146 in the 'users' index?,"PUT /users/_doc/146
+{
+  ""username"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 140 in the 'metrics' index?,"PUT /metrics/_doc/140
+{
+  ""timestamp"": ""Login failed"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""status_code"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 421 in the 'events' index?,"PUT /events/_doc/421
+{
+  ""event_type"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""timestamp"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 190 from the 'logs' index?,DELETE /logs/_doc/190
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""user_id"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I search for documents in 'metrics' where 'status_code' contains 'File uploaded'?,"GET /metrics/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""status_code"": ""File uploaded""
+    }
+  }
+}"
+How do I delete the entire 'logs' index?,DELETE /logs
+How do I retrieve document ID 94 from the 'audit' index?,GET /audit/_doc/94
+How do I delete the entire 'security' index?,DELETE /security
+How do I delete the entire 'events' index?,DELETE /events
+How do I retrieve document ID 259 from the 'metrics' index?,GET /metrics/_doc/259
+How do I delete the entire 'security' index?,DELETE /security
+How do I search for documents in 'events' where 'message' contains 'Unauthorized access'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Unauthorized access""
+    }
+  }
+}"
+How do I search for documents in 'events' where 'message' contains 'Unauthorized access'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""Unauthorized access""
+    }
+  }
+}"
+How do I search for documents in 'audit' where 'event_type' contains 'Unauthorized access'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""Unauthorized access""
+    }
+  }
+}"
+How do I retrieve document ID 149 from the 'app' index?,GET /app/_doc/149
+How do I update or create a document with ID 104 in the 'metrics' index?,"PUT /metrics/_doc/104
+{
+  ""user_id"": ""Login failed"",
+  ""updated"": true
+}"
+How do I retrieve document ID 315 from the 'app' index?,GET /app/_doc/315
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""username"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 401 from the 'audit' index?,DELETE /audit/_doc/401
+How do I retrieve document ID 246 from the 'security' index?,GET /security/_doc/246
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""message"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 123 in the 'security' index?,"PUT /security/_doc/123
+{
+  ""timestamp"": ""User logged in"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""timestamp"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 254 in the 'metrics' index?,"PUT /metrics/_doc/254
+{
+  ""ip_address"": ""Login failed"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""event_type"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""ip_address"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'logs' index?,DELETE /logs
+How do I retrieve document ID 124 from the 'logs' index?,GET /logs/_doc/124
+How do I delete the entire 'events' index?,DELETE /events
+How do I update or create a document with ID 41 in the 'audit' index?,"PUT /audit/_doc/41
+{
+  ""timestamp"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I retrieve document ID 122 from the 'metrics' index?,GET /metrics/_doc/122
+How do I delete a specific document with ID 411 from the 'logs' index?,DELETE /logs/_doc/411
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""ip_address"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""timestamp"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 20 from the 'audit' index?,GET /audit/_doc/20
+How do I update or create a document with ID 373 in the 'app' index?,"PUT /app/_doc/373
+{
+  ""ip_address"": ""Login failed"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 228 from the 'events' index?,DELETE /events/_doc/228
+How do I retrieve document ID 161 from the 'audit' index?,GET /audit/_doc/161
+How do I delete the entire 'app' index?,DELETE /app
+How do I search for documents in 'events' where 'ip_address' contains 'User logged in'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""ip_address"": ""User logged in""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""ip_address"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""user_id"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 75 from the 'events' index?,DELETE /events/_doc/75
+How do I update or create a document with ID 382 in the 'users' index?,"PUT /users/_doc/382
+{
+  ""status_code"": ""User logged in"",
+  ""updated"": true
+}"
+How do I search for documents in 'app' where 'status_code' contains 'System rebooted'?,"GET /app/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""status_code"": ""System rebooted""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""username"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I update or create a document with ID 53 in the 'events' index?,"PUT /events/_doc/53
+{
+  ""ip_address"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I delete the entire 'users' index?,DELETE /users
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""timestamp"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""event_type"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'events' index?,DELETE /events
+How do I delete the entire 'users' index?,DELETE /users
+How do I update or create a document with ID 313 in the 'users' index?,"PUT /users/_doc/313
+{
+  ""status_code"": ""Login failed"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""message"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 414 in the 'events' index?,"PUT /events/_doc/414
+{
+  ""event_type"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 164 in the 'events' index?,"PUT /events/_doc/164
+{
+  ""event_type"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I search for documents in 'security' where 'timestamp' contains 'System rebooted'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""timestamp"": ""System rebooted""
+    }
+  }
+}"
+How do I update or create a document with ID 158 in the 'audit' index?,"PUT /audit/_doc/158
+{
+  ""timestamp"": ""User logged in"",
+  ""updated"": true
+}"
+How do I retrieve document ID 43 from the 'app' index?,GET /app/_doc/43
+How do I update or create a document with ID 266 in the 'audit' index?,"PUT /audit/_doc/266
+{
+  ""user_id"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""event_type"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 363 from the 'events' index?,DELETE /events/_doc/363
+How do I update or create a document with ID 451 in the 'events' index?,"PUT /events/_doc/451
+{
+  ""user_id"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I retrieve document ID 45 from the 'app' index?,GET /app/_doc/45
+How do I update or create a document with ID 442 in the 'app' index?,"PUT /app/_doc/442
+{
+  ""status_code"": ""User logged in"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 250 in the 'logs' index?,"PUT /logs/_doc/250
+{
+  ""ip_address"": ""Login failed"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""username"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'logs' index?,DELETE /logs
+How do I update or create a document with ID 104 in the 'audit' index?,"PUT /audit/_doc/104
+{
+  ""timestamp"": ""User logged in"",
+  ""updated"": true
+}"
+How do I search for documents in 'logs' where 'message' contains 'System rebooted'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""System rebooted""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""user_id"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""username"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 105 in the 'security' index?,"PUT /security/_doc/105
+{
+  ""message"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 187 in the 'audit' index?,"PUT /audit/_doc/187
+{
+  ""message"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""timestamp"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I search for documents in 'app' where 'ip_address' contains 'Login failed'?,"GET /app/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""ip_address"": ""Login failed""
+    }
+  }
+}"
+How do I search for documents in 'audit' where 'timestamp' contains 'Login failed'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""timestamp"": ""Login failed""
+    }
+  }
+}"
+How do I delete the entire 'metrics' index?,DELETE /metrics
+How do I update or create a document with ID 57 in the 'metrics' index?,"PUT /metrics/_doc/57
+{
+  ""status_code"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 197 in the 'logs' index?,"PUT /logs/_doc/197
+{
+  ""username"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""message"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I search for documents in 'security' where 'message' contains 'User logged in'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""User logged in""
+    }
+  }
+}"
+How do I update or create a document with ID 232 in the 'users' index?,"PUT /users/_doc/232
+{
+  ""user_id"": ""User logged in"",
+  ""updated"": true
+}"
+How do I retrieve document ID 29 from the 'metrics' index?,GET /metrics/_doc/29
+How do I update or create a document with ID 365 in the 'audit' index?,"PUT /audit/_doc/365
+{
+  ""event_type"": ""Login failed"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 491 in the 'audit' index?,"PUT /audit/_doc/491
+{
+  ""ip_address"": ""Login failed"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""username"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""username"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 304 from the 'app' index?,DELETE /app/_doc/304
+How do I retrieve document ID 389 from the 'logs' index?,GET /logs/_doc/389
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""user_id"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I search for documents in 'audit' where 'user_id' contains 'Unauthorized access'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""user_id"": ""Unauthorized access""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""username"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""timestamp"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I search for documents in 'security' where 'status_code' contains 'Login failed'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""status_code"": ""Login failed""
+    }
+  }
+}"
+How do I search for documents in 'security' where 'username' contains 'Login failed'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""Login failed""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""user_id"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 14 from the 'users' index?,GET /users/_doc/14
+How do I update or create a document with ID 201 in the 'users' index?,"PUT /users/_doc/201
+{
+  ""timestamp"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I search for documents in 'events' where 'username' contains 'User logged in'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""User logged in""
+    }
+  }
+}"
+How do I delete a specific document with ID 414 from the 'audit' index?,DELETE /audit/_doc/414
+How do I delete a specific document with ID 486 from the 'metrics' index?,DELETE /metrics/_doc/486
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""ip_address"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 186 from the 'users' index?,DELETE /users/_doc/186
+How do I retrieve document ID 143 from the 'logs' index?,GET /logs/_doc/143
+How do I update or create a document with ID 174 in the 'logs' index?,"PUT /logs/_doc/174
+{
+  ""username"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I retrieve document ID 350 from the 'app' index?,GET /app/_doc/350
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""event_type"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""user_id"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 294 in the 'users' index?,"PUT /users/_doc/294
+{
+  ""event_type"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 313 in the 'app' index?,"PUT /app/_doc/313
+{
+  ""status_code"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I delete the entire 'users' index?,DELETE /users
+How do I search for documents in 'events' where 'status_code' contains 'User logged in'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""status_code"": ""User logged in""
+    }
+  }
+}"
+How do I search for documents in 'events' where 'ip_address' contains 'Unauthorized access'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""ip_address"": ""Unauthorized access""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""username"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""status_code"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 326 in the 'users' index?,"PUT /users/_doc/326
+{
+  ""user_id"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 156 in the 'metrics' index?,"PUT /metrics/_doc/156
+{
+  ""timestamp"": ""Login failed"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 434 in the 'events' index?,"PUT /events/_doc/434
+{
+  ""event_type"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""user_id"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 351 in the 'audit' index?,"PUT /audit/_doc/351
+{
+  ""message"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 3 in the 'security' index?,"PUT /security/_doc/3
+{
+  ""event_type"": ""User logged in"",
+  ""updated"": true
+}"
+How do I retrieve document ID 93 from the 'security' index?,GET /security/_doc/93
+How do I delete a specific document with ID 200 from the 'audit' index?,DELETE /audit/_doc/200
+How do I retrieve document ID 232 from the 'logs' index?,GET /logs/_doc/232
+How do I delete the entire 'security' index?,DELETE /security
+How do I update or create a document with ID 296 in the 'audit' index?,"PUT /audit/_doc/296
+{
+  ""user_id"": ""User logged in"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""event_type"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""event_type"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 219 in the 'users' index?,"PUT /users/_doc/219
+{
+  ""timestamp"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I delete the entire 'app' index?,DELETE /app
+How do I update or create a document with ID 101 in the 'audit' index?,"PUT /audit/_doc/101
+{
+  ""message"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 143 from the 'logs' index?,DELETE /logs/_doc/143
+How do I update or create a document with ID 210 in the 'app' index?,"PUT /app/_doc/210
+{
+  ""message"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I search for documents in 'logs' where 'timestamp' contains 'Login failed'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""timestamp"": ""Login failed""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""timestamp"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 347 in the 'audit' index?,"PUT /audit/_doc/347
+{
+  ""event_type"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I retrieve document ID 398 from the 'app' index?,GET /app/_doc/398
+How do I update or create a document with ID 389 in the 'audit' index?,"PUT /audit/_doc/389
+{
+  ""username"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 135 in the 'logs' index?,"PUT /logs/_doc/135
+{
+  ""ip_address"": ""Login failed"",
+  ""updated"": true
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I retrieve document ID 245 from the 'events' index?,GET /events/_doc/245
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""status_code"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'users' index?,DELETE /users
+How do I search for documents in 'audit' where 'event_type' contains 'Unauthorized access'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""Unauthorized access""
+    }
+  }
+}"
+How do I delete the entire 'app' index?,DELETE /app
+How do I delete a specific document with ID 347 from the 'app' index?,DELETE /app/_doc/347
+How do I delete a specific document with ID 275 from the 'logs' index?,DELETE /logs/_doc/275
+How do I update or create a document with ID 29 in the 'events' index?,"PUT /events/_doc/29
+{
+  ""user_id"": ""User logged in"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 443 in the 'events' index?,"PUT /events/_doc/443
+{
+  ""timestamp"": ""Login failed"",
+  ""updated"": true
+}"
+How do I search for documents in 'app' where 'message' contains 'System rebooted'?,"GET /app/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""message"": ""System rebooted""
+    }
+  }
+}"
+How do I delete a specific document with ID 192 from the 'audit' index?,DELETE /audit/_doc/192
+How do I delete a specific document with ID 198 from the 'events' index?,DELETE /events/_doc/198
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""user_id"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 460 in the 'audit' index?,"PUT /audit/_doc/460
+{
+  ""event_type"": ""User logged in"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""username"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'logs' index?,DELETE /logs
+How do I search for documents in 'logs' where 'user_id' contains 'File uploaded'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""user_id"": ""File uploaded""
+    }
+  }
+}"
+How do I delete the entire 'metrics' index?,DELETE /metrics
+How do I search for documents in 'audit' where 'status_code' contains 'System rebooted'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""status_code"": ""System rebooted""
+    }
+  }
+}"
+How do I update or create a document with ID 170 in the 'logs' index?,"PUT /logs/_doc/170
+{
+  ""username"": ""Login failed"",
+  ""updated"": true
+}"
+How do I retrieve document ID 208 from the 'app' index?,GET /app/_doc/208
+How do I retrieve document ID 424 from the 'logs' index?,GET /logs/_doc/424
+How do I search for documents in 'app' where 'timestamp' contains 'System rebooted'?,"GET /app/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""timestamp"": ""System rebooted""
+    }
+  }
+}"
+How do I search for documents in 'app' where 'event_type' contains 'Unauthorized access'?,"GET /app/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""Unauthorized access""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""ip_address"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""message"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I update or create a document with ID 221 in the 'events' index?,"PUT /events/_doc/221
+{
+  ""username"": ""Login failed"",
+  ""updated"": true
+}"
+How do I retrieve document ID 144 from the 'app' index?,GET /app/_doc/144
+How do I delete the entire 'events' index?,DELETE /events
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""username"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'metrics' index?,DELETE /metrics
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""user_id"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 18 from the 'users' index?,GET /users/_doc/18
+How do I update or create a document with ID 494 in the 'logs' index?,"PUT /logs/_doc/494
+{
+  ""status_code"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""ip_address"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""status_code"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 224 in the 'security' index?,"PUT /security/_doc/224
+{
+  ""username"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I search for documents in 'security' where 'event_type' contains 'Login failed'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""Login failed""
+    }
+  }
+}"
+How do I retrieve document ID 310 from the 'metrics' index?,GET /metrics/_doc/310
+How do I update or create a document with ID 474 in the 'users' index?,"PUT /users/_doc/474
+{
+  ""username"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 308 from the 'logs' index?,DELETE /logs/_doc/308
+How do I search for documents in 'users' where 'user_id' contains 'Unauthorized access'?,"GET /users/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""user_id"": ""Unauthorized access""
+    }
+  }
+}"
+How do I retrieve document ID 335 from the 'audit' index?,GET /audit/_doc/335
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""message"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 59 from the 'users' index?,GET /users/_doc/59
+How do I update or create a document with ID 282 in the 'audit' index?,"PUT /audit/_doc/282
+{
+  ""user_id"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""status_code"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""timestamp"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 134 in the 'events' index?,"PUT /events/_doc/134
+{
+  ""status_code"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I retrieve document ID 156 from the 'app' index?,GET /app/_doc/156
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""message"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 130 from the 'security' index?,GET /security/_doc/130
+How do I search for documents in 'audit' where 'event_type' contains 'File uploaded'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""File uploaded""
+    }
+  }
+}"
+How do I delete a specific document with ID 346 from the 'app' index?,DELETE /app/_doc/346
+How do I search for documents in 'audit' where 'status_code' contains 'File uploaded'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""status_code"": ""File uploaded""
+    }
+  }
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I search for documents in 'audit' where 'ip_address' contains 'System rebooted'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""ip_address"": ""System rebooted""
+    }
+  }
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I update or create a document with ID 378 in the 'logs' index?,"PUT /logs/_doc/378
+{
+  ""message"": ""User logged in"",
+  ""updated"": true
+}"
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I search for documents in 'app' where 'status_code' contains 'Unauthorized access'?,"GET /app/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""status_code"": ""Unauthorized access""
+    }
+  }
+}"
+How do I update or create a document with ID 159 in the 'users' index?,"PUT /users/_doc/159
+{
+  ""timestamp"": ""User logged in"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 139 in the 'users' index?,"PUT /users/_doc/139
+{
+  ""username"": ""Login failed"",
+  ""updated"": true
+}"
+How do I search for documents in 'logs' where 'user_id' contains 'Unauthorized access'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""user_id"": ""Unauthorized access""
+    }
+  }
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I retrieve document ID 239 from the 'security' index?,GET /security/_doc/239
+How do I update or create a document with ID 118 in the 'metrics' index?,"PUT /metrics/_doc/118
+{
+  ""user_id"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 443 in the 'events' index?,"PUT /events/_doc/443
+{
+  ""event_type"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete the entire 'logs' index?,DELETE /logs
+How do I update or create a document with ID 123 in the 'events' index?,"PUT /events/_doc/123
+{
+  ""user_id"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I search for documents in 'app' where 'event_type' contains 'System rebooted'?,"GET /app/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""System rebooted""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""timestamp"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 328 from the 'audit' index?,GET /audit/_doc/328
+How do I retrieve document ID 321 from the 'app' index?,GET /app/_doc/321
+How do I update or create a document with ID 320 in the 'metrics' index?,"PUT /metrics/_doc/320
+{
+  ""username"": ""User logged in"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""message"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 442 in the 'app' index?,"PUT /app/_doc/442
+{
+  ""username"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 120 in the 'security' index?,"PUT /security/_doc/120
+{
+  ""status_code"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 167 in the 'metrics' index?,"PUT /metrics/_doc/167
+{
+  ""user_id"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete the entire 'security' index?,DELETE /security
+How do I search for documents in 'app' where 'username' contains 'Unauthorized access'?,"GET /app/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""Unauthorized access""
+    }
+  }
+}"
+How do I retrieve document ID 185 from the 'users' index?,GET /users/_doc/185
+How do I delete the entire 'metrics' index?,DELETE /metrics
+How do I retrieve document ID 25 from the 'security' index?,GET /security/_doc/25
+How do I retrieve document ID 295 from the 'logs' index?,GET /logs/_doc/295
+How do I delete the entire 'logs' index?,DELETE /logs
+How do I retrieve document ID 265 from the 'app' index?,GET /app/_doc/265
+How do I retrieve document ID 70 from the 'logs' index?,GET /logs/_doc/70
+How do I update or create a document with ID 3 in the 'app' index?,"PUT /app/_doc/3
+{
+  ""status_code"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I search for documents in 'audit' where 'username' contains 'File uploaded'?,"GET /audit/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""File uploaded""
+    }
+  }
+}"
+How do I retrieve document ID 496 from the 'users' index?,GET /users/_doc/496
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""user_id"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""user_id"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""timestamp"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""timestamp"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 323 in the 'security' index?,"PUT /security/_doc/323
+{
+  ""username"": ""User logged in"",
+  ""updated"": true
+}"
+How do I delete the entire 'users' index?,DELETE /users
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""ip_address"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 305 from the 'events' index?,GET /events/_doc/305
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""user_id"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 132 in the 'app' index?,"PUT /app/_doc/132
+{
+  ""timestamp"": ""User logged in"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 477 in the 'users' index?,"PUT /users/_doc/477
+{
+  ""status_code"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 28 from the 'audit' index?,DELETE /audit/_doc/28
+How do I delete a specific document with ID 55 from the 'events' index?,DELETE /events/_doc/55
+How do I update or create a document with ID 409 in the 'users' index?,"PUT /users/_doc/409
+{
+  ""timestamp"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'audit' index?,"POST /audit/_doc
+{
+  ""username"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""status_code"": ""Unauthorized access"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I search for documents in 'users' where 'user_id' contains 'Login failed'?,"GET /users/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""user_id"": ""Login failed""
+    }
+  }
+}"
+How do I retrieve document ID 103 from the 'logs' index?,GET /logs/_doc/103
+How do I update or create a document with ID 165 in the 'audit' index?,"PUT /audit/_doc/165
+{
+  ""event_type"": ""Login failed"",
+  ""updated"": true
+}"
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""status_code"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 70 in the 'app' index?,"PUT /app/_doc/70
+{
+  ""timestamp"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 269 from the 'metrics' index?,DELETE /metrics/_doc/269
+How do I delete a specific document with ID 109 from the 'users' index?,DELETE /users/_doc/109
+How do I insert a new document with random data into the 'events' index?,"POST /events/_doc
+{
+  ""username"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 467 in the 'logs' index?,"PUT /logs/_doc/467
+{
+  ""event_type"": ""User logged in"",
+  ""updated"": true
+}"
+How do I retrieve document ID 337 from the 'security' index?,GET /security/_doc/337
+How do I update or create a document with ID 370 in the 'users' index?,"PUT /users/_doc/370
+{
+  ""message"": ""User logged in"",
+  ""updated"": true
+}"
+How do I retrieve document ID 194 from the 'users' index?,GET /users/_doc/194
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""username"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete a specific document with ID 146 from the 'events' index?,DELETE /events/_doc/146
+How do I update or create a document with ID 255 in the 'security' index?,"PUT /security/_doc/255
+{
+  ""user_id"": ""User logged in"",
+  ""updated"": true
+}"
+How do I retrieve document ID 179 from the 'audit' index?,GET /audit/_doc/179
+How do I delete a specific document with ID 322 from the 'security' index?,DELETE /security/_doc/322
+How do I retrieve document ID 47 from the 'security' index?,GET /security/_doc/47
+How do I update or create a document with ID 129 in the 'events' index?,"PUT /events/_doc/129
+{
+  ""status_code"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 469 in the 'app' index?,"PUT /app/_doc/469
+{
+  ""user_id"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 154 from the 'app' index?,DELETE /app/_doc/154
+How do I update or create a document with ID 483 in the 'app' index?,"PUT /app/_doc/483
+{
+  ""ip_address"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 90 in the 'users' index?,"PUT /users/_doc/90
+{
+  ""ip_address"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 352 in the 'logs' index?,"PUT /logs/_doc/352
+{
+  ""ip_address"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I delete the entire 'users' index?,DELETE /users
+How do I update or create a document with ID 337 in the 'app' index?,"PUT /app/_doc/337
+{
+  ""timestamp"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""user_id"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 151 from the 'logs' index?,GET /logs/_doc/151
+How do I retrieve document ID 358 from the 'events' index?,GET /events/_doc/358
+How do I search for documents in 'events' where 'event_type' contains 'File uploaded'?,"GET /events/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""File uploaded""
+    }
+  }
+}"
+How do I search for documents in 'logs' where 'username' contains 'User logged in'?,"GET /logs/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""username"": ""User logged in""
+    }
+  }
+}"
+How do I delete a specific document with ID 24 from the 'logs' index?,DELETE /logs/_doc/24
+How do I retrieve document ID 423 from the 'users' index?,GET /users/_doc/423
+How do I insert a new document with random data into the 'metrics' index?,"POST /metrics/_doc
+{
+  ""username"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 78 from the 'logs' index?,GET /logs/_doc/78
+How do I retrieve document ID 445 from the 'app' index?,GET /app/_doc/445
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""status_code"": ""User logged in"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I retrieve document ID 272 from the 'app' index?,GET /app/_doc/272
+How do I update or create a document with ID 450 in the 'metrics' index?,"PUT /metrics/_doc/450
+{
+  ""event_type"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 357 from the 'users' index?,DELETE /users/_doc/357
+How do I update or create a document with ID 485 in the 'events' index?,"PUT /events/_doc/485
+{
+  ""timestamp"": ""User logged in"",
+  ""updated"": true
+}"
+How do I delete the entire 'metrics' index?,DELETE /metrics
+How do I update or create a document with ID 398 in the 'users' index?,"PUT /users/_doc/398
+{
+  ""username"": ""File uploaded"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 215 in the 'audit' index?,"PUT /audit/_doc/215
+{
+  ""event_type"": ""User logged in"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 145 in the 'audit' index?,"PUT /audit/_doc/145
+{
+  ""ip_address"": ""User logged in"",
+  ""updated"": true
+}"
+How do I retrieve document ID 459 from the 'events' index?,GET /events/_doc/459
+How do I insert a new document with random data into the 'security' index?,"POST /security/_doc
+{
+  ""message"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 452 in the 'security' index?,"PUT /security/_doc/452
+{
+  ""ip_address"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I retrieve document ID 269 from the 'metrics' index?,GET /metrics/_doc/269
+How do I update or create a document with ID 235 in the 'logs' index?,"PUT /logs/_doc/235
+{
+  ""message"": ""Login failed"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 207 from the 'events' index?,DELETE /events/_doc/207
+How do I retrieve document ID 106 from the 'metrics' index?,GET /metrics/_doc/106
+How do I update or create a document with ID 348 in the 'audit' index?,"PUT /audit/_doc/348
+{
+  ""username"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 309 in the 'users' index?,"PUT /users/_doc/309
+{
+  ""timestamp"": ""User logged in"",
+  ""updated"": true
+}"
+How do I update or create a document with ID 333 in the 'security' index?,"PUT /security/_doc/333
+{
+  ""message"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete the entire 'events' index?,DELETE /events
+How do I insert a new document with random data into the 'logs' index?,"POST /logs/_doc
+{
+  ""message"": ""System rebooted"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I update or create a document with ID 371 in the 'events' index?,"PUT /events/_doc/371
+{
+  ""ip_address"": ""User logged in"",
+  ""updated"": true
+}"
+How do I retrieve document ID 413 from the 'audit' index?,GET /audit/_doc/413
+How do I delete a specific document with ID 71 from the 'security' index?,DELETE /security/_doc/71
+How do I search for documents in 'metrics' where 'timestamp' contains 'File uploaded'?,"GET /metrics/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""timestamp"": ""File uploaded""
+    }
+  }
+}"
+How do I update or create a document with ID 122 in the 'users' index?,"PUT /users/_doc/122
+{
+  ""status_code"": ""Unauthorized access"",
+  ""updated"": true
+}"
+How do I delete a specific document with ID 148 from the 'security' index?,DELETE /security/_doc/148
+How do I update or create a document with ID 87 in the 'logs' index?,"PUT /logs/_doc/87
+{
+  ""timestamp"": ""Login failed"",
+  ""updated"": true
+}"
+How do I delete the entire 'audit' index?,DELETE /audit
+How do I search for documents in 'security' where 'event_type' contains 'User logged in'?,"GET /security/_search
+{
+  ""query"": {
+    ""match_phrase"": {
+      ""event_type"": ""User logged in""
+    }
+  }
+}"
+How do I insert a new document with random data into the 'app' index?,"POST /app/_doc
+{
+  ""message"": ""Login failed"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
+How do I delete the entire 'metrics' index?,DELETE /metrics
+How do I update or create a document with ID 95 in the 'metrics' index?,"PUT /metrics/_doc/95
+{
+  ""timestamp"": ""System rebooted"",
+  ""updated"": true
+}"
+How do I delete the entire 'users' index?,DELETE /users
+How do I delete the entire 'events' index?,DELETE /events
+How do I insert a new document with random data into the 'users' index?,"POST /users/_doc
+{
+  ""user_id"": ""File uploaded"",
+  ""timestamp"": ""2023-01-01T00:00:00Z""
+}"
